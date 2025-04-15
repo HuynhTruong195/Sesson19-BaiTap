@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Sesson19-Bai2.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> Task Management</h1>
+        <form action="" id="form">
+            <span>
+                <input class="input" id="content" type="text" placeholder="Content">
+                <input type="date" class="date input" id="date">
+                <select name="" class="" id="select">
+                    <option selected value="" selected disabled hidden>Choose status</option>
+                    <!-- value="": Không có giá trị thật sự.
+    disabled: Không thể chọn lại sau khi đã chọn option khác.
+    hidden: Không hiển thị trong dropdown khi người dùng bấm vào (optional) -->
+                    <option value="1" id="value">Pencing</option>
+                    <option value="2" id="value">Decided</option>
+                </select>
+                <input class="input" id="username" type="text" placeholder="Username">
+                <button type="button" id="btn">Submit</button>
+            </span>
+        </form>
+
+
+        <table>
+            <thead>
+                <tr class="table-head">
+                    <th>#</th>
+                    <th>Content</th>
+                    <th>Due date</th>
+                    <th>Status</th>
+                    <th>Assigned to</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr id="valueDefault">
+                    <td>1</td>
+                    <td>Learn Javascript Session 01</td>
+                    <td>2023-04-17</td>
+                    <td>Pending</td>
+                    <td>Anh Bách</td>
+                    <td>
+                        <button onclick="editDefault(this)" >Sửa</button>
+                        <button onclick="dlt(this)">Xóa</button>
+                    </td>
+                </tr>
+                <tr id="valueDefault">
+                    <td>2</td>
+                    <td>Learn Javascript Session 02</td>
+                    <td>2023-04-17</td>
+                    <td>Pending</td>
+                    <td>Anh Hiếu</td>
+                    <td>
+                        <button onclick="editDefault(this)">Sửa</button>
+                        <button onclick="dlt(this)">Xóa</button>
+                    </td>
+                </tr>
+                <tr id="valueDefault">
+                    <td>3</td>
+                    <td>Learn CSS Session 02</td>
+                    <td>2023-04-17</td>
+                    <td>Pending</td>
+                    <td>Anh Hoàng</td>
+                    <td>
+                        <button onclick="editDefault(this)">Sửa</button>
+                        <button onclick="dlt(this)">Xóa</button>
+                    </td>
+                </tr>
+
+
+            </tbody>
+            <tbody id="tbody"></tbody>
+        </table>
+
+
+    </div>
+
+
+
+    <script src="./Sesson19-Bai2.js"></script>
+</body>
+
+</html>

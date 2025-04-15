@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#form {
+    padding: 20px;
+    border: 1px;
+}
+.input,
+.date,
+.select{
+    font-size: 16px;
+}
+
+#table{
+    width: 800px;
+    }
+
+    th {
+  padding: 0px 40px ;
+    }
+   
+.table-head {
+    border-bottom: 1px solid grey;
+    background-color: beige;
+}
